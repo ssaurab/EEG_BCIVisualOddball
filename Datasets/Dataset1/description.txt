@@ -1,0 +1,17 @@
+This is a short demo dataset from a natural reading experiment. In the experiment, participant read lists of five words from left to right. Parafoveal words were masked using the Moving Window Paradigm. Their task was to report whether the list contained the name of an animal (e.g. tiger). Instead of shared triggers, special synchronization messages, marked by the keyword "MYKEYWORD" were used as synchronization events for the eye tracker. Only one event value, the number 3 was sent repeatedly to the ET during the recording, it serves both as start-event and end-event for synchronization. The toolbox picks its first occurence as the start-event and its last occurence as the end-event.
+
+Eye movements were recorded binocularly with an Eyelink 1000 tracker at 1000 Hz. EEG data was recorded from 72 channels with Biosemi Active amplifiers at a rate of 512 Hz. Offline, the EEG was band-pass filtered from 0.1 to 100 Hz and converted to average reference.
+
+Online detection of saccades/fixations/blinks was switched on. Eye movement events can be directly imported using EYE-EEG.
+
+
+Triggers/Messages
+
+    3: Onset of word list, also start- and end-event for synchronization
+    "MYKEYWORD": Keyword for synch messages in ET
+
+The EEG recording contains more trigger values in addition to the "3":
+
+    10: Fixation check (trial start)
+    250: Onset of question screen ("Animal in the list?")
+    255: Response (button press)
