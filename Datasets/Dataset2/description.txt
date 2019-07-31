@@ -1,0 +1,12 @@
+This is a short demo dataset consisting of five experimental trials and only 25 of the original recording channels. In the experiment, a participant searched for a small target stimulus within greyscale pictures of natural scenes. The pictures (800x600 greyscale images) were presented in the center of a screen running at a 1024x768 pixel resolution. A search target (a slowly expanding dark-gray disc) appeared between 8 and 16 seconds after picture onset at a random location within the picture. Participants pressed a button as soon as they detected the target. 1000 ms after the button press, the picture was replaced by an empty dark screen. Because of the varying time needed to find the target, trials have a variable duration.
+
+Eye movements were recorded binocularly with an SMI IView X tracker at 500 Hz. The EEG data, recorded with BrainProducts amplifiers, is referenced against the average of all recording channels. Offline, the EEG was band-pass filtered from 1-40 Hz.
+
+
+Triggers
+
+    S103: Start-event for synchronization
+    S 12: Onset of a picture on the screen
+    S 1: Onset of search target (grey disc) within picture
+    S 99: Response: participant found the target and pressed a button.
+    S203: End-event for synchronization
