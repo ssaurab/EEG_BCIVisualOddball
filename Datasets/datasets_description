@@ -1,1 +1,18 @@
 
+    Dataset1 : An 18-subject EEG data collection using a visual-oddball task,designed for benchmarking algorithms and headset performance comparisons - Kay Robbins, Kyung-min Su, W. David Hairston
+        Subjects viewed images displayed at 2-second intervals and distinguished target oddball images from expected images.
+        Several research projects have used this data to test artifact detection, classification, transfer learning, EEG preprocessing, blink detection, and automated annotation algorithms
+        EEG: 72 channels, 512Hz
+        The data was acquired using a Biosemi Active 2 EEG headset(gel-based) and includes 64 channels of EEG, 4 channels of EOG (electrooculogram), and 2 mastoid reference channels. They also have two processed datasets.
+        Cleaning: PREP based noise removal, interpolate bad channels. MARA based artifact removal. Ruinca function was used to calculate ICA components.
+        
+    Dataset2: Visual Search in Natural Images
+        The subject is asked to find a small target in greyscale images of a natural sceneries. Participants were asked to press a button as soon as they detect the target. 1000ms after this, the screen goes blank.
+        EEG:25 channels, filtered 1-40Hz
+        Eye Data: 500Hz
+        
+  Our Dataset: Visual oddball task, 11 subjects (9M,2F).
+        Subjects 1,2,3,4,5 attended for two sessions.
+        EEG: 128 channels, filtered 1-60Hz
+        Notch filter: at 50Hz
+        
